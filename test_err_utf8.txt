@@ -1,0 +1,151 @@
+﻿cmd.exe : 
+test_replay_function_exists 
+(tests.test_dev_team.TestCre
+wExecution.test_replay_funct
+ion_exists)
+No linha:1 caractere:1
++ cmd.exe /c "set 
+PYTHONPATH=dev_team\src&& 
+set PYTHONIOENCODING=utf8&& 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (test_  
+  replay_fun...unction_ex   
+ ists):String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+A fun├º├úo replay() deve 
+existir e ser cham├ível. 
+... <frozen 
+importlib._bootstrap>:1342: 
+ImportWarning: Cannot set 
+an attribute on 
+'crewai.rag' for child 
+module 'embeddings'
+ok
+test_run_calls_kickoff (test
+s.test_dev_team.TestCrewExec
+ution.test_run_calls_kickoff
+)
+run() deve chamar kickoff() 
+na crew. ... ok
+test_run_handles_exception (
+tests.test_dev_team.TestCrew
+Execution.test_run_handles_e
+xception)
+run() deve propagar 
+exce├º├Áes corretamente. 
+... Traceback (most recent 
+call last):
+  File "C:\equipe-qwen\dev_t
+eam\src\dev_team\main.py", 
+line 62, in run
+    result = DevTeamCrew().c
+rew().kickoff(inputs=inputs)
+  File "C:\Python313\Lib\uni
+ttest\mock.py", line 1169, 
+in __call__
+    return 
+self._mock_call(*args, 
+**kwargs)
+           ~~~~~~~~~~~~~~~^^
+^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\uni
+ttest\mock.py", line 1173, 
+in _mock_call
+    return self._execute_moc
+k_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~
+~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\uni
+ttest\mock.py", line 1228, 
+in _execute_mock_call
+    raise effect
+Exception: API Error 
+simulado
+ok
+test_run_passes_correct_inpu
+ts (tests.test_dev_team.Test
+CrewExecution.test_run_passe
+s_correct_inputs)
+run() deve passar 'topic' e 
+'current_year' como inputs. 
+... FAIL
+test_test_function_exists (t
+ests.test_dev_team.TestCrewE
+xecution.test_test_function_
+exists)
+A fun├º├úo test() deve 
+existir e ser cham├ível. 
+... ok
+test_train_function_exists (
+tests.test_dev_team.TestCrew
+Execution.test_train_functio
+n_exists)
+A fun├º├úo train() deve 
+existir e ser cham├ível. 
+... ok
+
+============================
+============================
+==============
+FAIL: test_run_passes_correc
+t_inputs (tests.test_dev_tea
+m.TestCrewExecution.test_run
+_passes_correct_inputs)
+run() deve passar 'topic' e 
+'current_year' como inputs.
+----------------------------
+----------------------------
+--------------
+Traceback (most recent call 
+last):
+  File "C:\Python313\Lib\uni
+ttest\mock.py", line 1426, 
+in patched
+    return func(*newargs, 
+**newkeywargs)
+  File "C:\equipe-qwen\tests
+\test_dev_team.py", line 
+247, in test_run_passes_corr
+ect_inputs
+    self.assertIn('topic', 
+inputs_passed)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+^^^^^^^^^^^^^
+AssertionError: 'topic' not 
+found in {}
+
+----------------------------
+----------------------------
+--------------
+Ran 6 tests in 1.376s
+
+FAILED (failures=1)
+Ô£à .env carregado de: C:\equipe-qwen\dev_team\.env
+­ƒöæ GEMINI_API_KEY configurada: Ô£à
+Ô£à DevTeamCrew importado com sucesso!
+
+­ƒÜÇ Iniciando Dev Team Crew...
+
+
+
+========== RESULTADO FINAL ==========
+<MagicMock name='DevTeamCrew().crew().kickoff()' id='2026101528224'>
+
+­ƒÜÇ Iniciando Dev Team Crew...
+
+
+ÔØî ERRO CR├ìTICO: API Error simulado
+
+­ƒÜÇ Iniciando Dev Team Crew...
+
+
+
+========== RESULTADO FINAL ==========
+<MagicMock name='DevTeamCrew().crew().kickoff()' id='2025310156320'>

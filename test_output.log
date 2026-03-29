@@ -1,0 +1,385 @@
+test_config_folder_exists (__main__.TestEnvironment.test_config_folder_exists)
+A pasta config deve existir. ... ok
+test_crewai_installed (__main__.TestEnvironment.test_crewai_installed)
+crewai deve estar instalado. ... ok
+test_dotenv_installed (__main__.TestEnvironment.test_dotenv_installed)
+python-dotenv deve estar instalado. ... ok
+test_env_file_exists (__main__.TestEnvironment.test_env_file_exists)
+O arquivo .env deve existir na raiz do projeto. ... ok
+test_gemini_api_key_configured (__main__.TestEnvironment.test_gemini_api_key_configured)
+GEMINI_API_KEY deve estar configurada no .env. ... ok
+test_prompts_folder_exists (__main__.TestEnvironment.test_prompts_folder_exists)
+A pasta prompts deve existir. ... ok
+test_pydantic_installed (__main__.TestEnvironment.test_pydantic_installed)
+pydantic deve estar instalado. ... ok
+test_python_version (__main__.TestEnvironment.test_python_version)
+Python deve ser >= 3.10 e < 3.14. ... ok
+test_src_structure (__main__.TestEnvironment.test_src_structure)
+A estrutura src/dev_team deve existir. ... ok
+test_yaml_installed (__main__.TestEnvironment.test_yaml_installed)
+pyyaml deve estar instalado. ... ok
+test_crew_has_agents_config (__main__.TestCrewInitialization.test_crew_has_agents_config)
+A crew deve ter agents_config definido. ... ok
+test_crew_has_tasks_config (__main__.TestCrewInitialization.test_crew_has_tasks_config)
+A crew deve ter tasks_config definido. ... ok
+test_crew_imports_successfully (__main__.TestCrewInitialization.test_crew_imports_successfully)
+A classe DevTeamCrew deve ser importável. ... ok
+test_crew_instantiates (__main__.TestCrewInitialization.test_crew_instantiates)
+DevTeamCrew() deve ser criado sem exceções. ... ok
+test_default_llm_defined (__main__.TestCrewInitialization.test_default_llm_defined)
+O modelo LLM padrão deve estar definido. ... ok
+test_manager_llm_defined (__main__.TestCrewInitialization.test_manager_llm_defined)
+O modelo LLM do manager deve estar definido. ... ok
+test_agents_have_required_fields (__main__.TestPromptsAndConfigs.test_agents_have_required_fields)
+Cada agente no YAML deve ter 'role' e 'goal'. ... ok
+test_agents_yaml_exists (__main__.TestPromptsAndConfigs.test_agents_yaml_exists)
+agents.yaml deve existir na pasta config. ... ok
+test_all_agents_in_yaml (__main__.TestPromptsAndConfigs.test_all_agents_in_yaml)
+Todos os agentes esperados devem estar no agents.yaml. ... ok
+test_all_prompt_files_exist (__main__.TestPromptsAndConfigs.test_all_prompt_files_exist)
+Todos os arquivos .md de prompt devem existir. ... ok
+test_all_prompts_not_empty (__main__.TestPromptsAndConfigs.test_all_prompts_not_empty)
+Nenhum arquivo de prompt deve estar vazio. ... ok
+test_all_tasks_in_yaml (__main__.TestPromptsAndConfigs.test_all_tasks_in_yaml)
+Todas as tasks esperadas devem estar no tasks.yaml. ... ok
+test_load_prompt_function (__main__.TestPromptsAndConfigs.test_load_prompt_function)
+A função load_prompt deve retornar string não vazia. ... ok
+test_load_prompt_raises_for_missing_file (__main__.TestPromptsAndConfigs.test_load_prompt_raises_for_missing_file)
+load_prompt deve lançar FileNotFoundError para arquivo inexistente. ... ok
+test_load_yaml_config_function (__main__.TestPromptsAndConfigs.test_load_yaml_config_function)
+A função load_yaml_config deve retornar um dicionário. ... ok
+test_load_yaml_raises_for_missing_file (__main__.TestPromptsAndConfigs.test_load_yaml_raises_for_missing_file)
+load_yaml_config deve lançar FileNotFoundError para arquivo inexistente. ... ok
+test_tasks_have_required_fields (__main__.TestPromptsAndConfigs.test_tasks_have_required_fields)
+Cada task no YAML deve ter 'description' e 'expected_output'. ... ok
+test_tasks_yaml_exists (__main__.TestPromptsAndConfigs.test_tasks_yaml_exists)
+tasks.yaml deve existir na pasta config. ... ok
+test_baml_expert_agent_created (__main__.TestAgentCreation.test_baml_expert_agent_created) ... ok
+test_kestra_expert_agent_created (__main__.TestAgentCreation.test_kestra_expert_agent_created) ... ok
+test_langgraph_expert_agent_created (__main__.TestAgentCreation.test_langgraph_expert_agent_created) ... ok
+test_python_expert_agent_created (__main__.TestAgentCreation.test_python_expert_agent_created) ... ok
+test_quality_supervisor_agent_created (__main__.TestAgentCreation.test_quality_supervisor_agent_created) ... ok
+test_rag_expert_agent_created (__main__.TestAgentCreation.test_rag_expert_agent_created) ... ok
+test_supabase_expert_agent_created (__main__.TestAgentCreation.test_supabase_expert_agent_created) ... ok
+test_super_dev_agent_created (__main__.TestAgentCreation.test_super_dev_agent_created) ... ok
+test_development_task_created (__main__.TestTaskCreation.test_development_task_created) ... ok
+test_development_task_description_not_empty (__main__.TestTaskCreation.test_development_task_description_not_empty) ... ok
+test_quality_review_task_created (__main__.TestTaskCreation.test_quality_review_task_created) ... ok
+test_quality_review_task_has_agent (__main__.TestTaskCreation.test_quality_review_task_has_agent) ... ok
+test_crew_has_7_worker_agents (__main__.TestCrewAssembly.test_crew_has_7_worker_agents)
+A crew deve ter 7 agentes trabalhadores (sem o manager). ... ok
+test_crew_has_manager_agent (__main__.TestCrewAssembly.test_crew_has_manager_agent)
+A crew hierárquica deve ter um manager_agent definido. ... ok
+test_crew_has_verbose_enabled (__main__.TestCrewAssembly.test_crew_has_verbose_enabled)
+A crew deve ter verbose=True. ... ok
+test_crew_uses_hierarchical_process (__main__.TestCrewAssembly.test_crew_uses_hierarchical_process)
+A crew deve usar Process.hierarchical. ... ok
+test_replay_function_exists (__main__.TestCrewExecution.test_replay_function_exists)
+A função replay() deve existir e ser chamável. ... ERROR
+test_run_calls_kickoff (__main__.TestCrewExecution.test_run_calls_kickoff)
+run() deve chamar kickoff() na crew. ... ERROR
+test_run_handles_exception (__main__.TestCrewExecution.test_run_handles_exception)
+run() deve propagar exceções corretamente. ... ERROR
+test_run_passes_correct_inputs (__main__.TestCrewExecution.test_run_passes_correct_inputs)
+run() deve passar 'topic' e 'current_year' como inputs. ... ERROR
+test_test_function_exists (__main__.TestCrewExecution.test_test_function_exists)
+A função test() deve existir e ser chamável. ... ERROR
+test_train_function_exists (__main__.TestCrewExecution.test_train_function_exists)
+A função train() deve existir e ser chamável. ... ERROR
+test_crewai_cli_available (__main__.TestCrewAINative.test_crewai_cli_available)
+O comando 'crewai' deve estar disponível no PATH. ... ERROR
+test_crewai_native_test_command (__main__.TestCrewAINative.test_crewai_native_test_command)
+Executa 'crewai test -n 1 -m gemini/gemini-2.5-flash'. ... skipped 'Pulando: GEMINI_API_KEY não configurada'
+
+======================================================================
+ERROR: test_replay_function_exists (__main__.TestCrewExecution.test_replay_function_exists)
+A função replay() deve existir e ser chamável.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python313\Lib\unittest\mock.py", line 1423, in patched
+    with self.decoration_helper(patched,
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+                                args,
+                                ^^^^^
+                                keywargs) as (newargs, newkeywargs):
+                                ^^^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Python313\Lib\unittest\mock.py", line 1405, in decoration_helper
+    arg = exit_stack.enter_context(patching)
+  File "C:\Python313\Lib\contextlib.py", line 530, in enter_context
+    result = _enter(cm)
+  File "C:\Python313\Lib\unittest\mock.py", line 1481, in __enter__
+    self.target = self.getter()
+                  ~~~~~~~~~~~^^
+  File "C:\Python313\Lib\pkgutil.py", line 518, in resolve_name
+    mod = importlib.import_module(s)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "c:\equipe-qwen\dev_team\src\dev_team\main.py", line 29, in <module>
+    print(f"\u2705 .env carregado de: {env_path}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\equipe-qwen\dev_team\.venv\Lib\site-packages\crewai\llm.py", line 141, in write
+    return self._original_stream.write(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+======================================================================
+ERROR: test_run_calls_kickoff (__main__.TestCrewExecution.test_run_calls_kickoff)
+run() deve chamar kickoff() na crew.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python313\Lib\unittest\mock.py", line 1426, in patched
+    return func(*newargs, **newkeywargs)
+  File "c:\equipe-qwen\tests\test_dev_team.py", line 225, in test_run_calls_kickoff
+    from dev_team.main import run
+  File "c:\equipe-qwen\dev_team\src\dev_team\main.py", line 29, in <module>
+    print(f"\u2705 .env carregado de: {env_path}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\equipe-qwen\dev_team\.venv\Lib\site-packages\crewai\llm.py", line 141, in write
+    return self._original_stream.write(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+======================================================================
+ERROR: test_run_handles_exception (__main__.TestCrewExecution.test_run_handles_exception)
+run() deve propagar exceções corretamente.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python313\Lib\unittest\mock.py", line 1423, in patched
+    with self.decoration_helper(patched,
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+                                args,
+                                ^^^^^
+                                keywargs) as (newargs, newkeywargs):
+                                ^^^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Python313\Lib\unittest\mock.py", line 1405, in decoration_helper
+    arg = exit_stack.enter_context(patching)
+  File "C:\Python313\Lib\contextlib.py", line 530, in enter_context
+    result = _enter(cm)
+  File "C:\Python313\Lib\unittest\mock.py", line 1481, in __enter__
+    self.target = self.getter()
+                  ~~~~~~~~~~~^^
+  File "C:\Python313\Lib\pkgutil.py", line 518, in resolve_name
+    mod = importlib.import_module(s)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "c:\equipe-qwen\dev_team\src\dev_team\main.py", line 29, in <module>
+    print(f"\u2705 .env carregado de: {env_path}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\equipe-qwen\dev_team\.venv\Lib\site-packages\crewai\llm.py", line 141, in write
+    return self._original_stream.write(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+======================================================================
+ERROR: test_run_passes_correct_inputs (__main__.TestCrewExecution.test_run_passes_correct_inputs)
+run() deve passar 'topic' e 'current_year' como inputs.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python313\Lib\unittest\mock.py", line 1423, in patched
+    with self.decoration_helper(patched,
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+                                args,
+                                ^^^^^
+                                keywargs) as (newargs, newkeywargs):
+                                ^^^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Python313\Lib\unittest\mock.py", line 1405, in decoration_helper
+    arg = exit_stack.enter_context(patching)
+  File "C:\Python313\Lib\contextlib.py", line 530, in enter_context
+    result = _enter(cm)
+  File "C:\Python313\Lib\unittest\mock.py", line 1481, in __enter__
+    self.target = self.getter()
+                  ~~~~~~~~~~~^^
+  File "C:\Python313\Lib\pkgutil.py", line 518, in resolve_name
+    mod = importlib.import_module(s)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "c:\equipe-qwen\dev_team\src\dev_team\main.py", line 29, in <module>
+    print(f"\u2705 .env carregado de: {env_path}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\equipe-qwen\dev_team\.venv\Lib\site-packages\crewai\llm.py", line 141, in write
+    return self._original_stream.write(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+======================================================================
+ERROR: test_test_function_exists (__main__.TestCrewExecution.test_test_function_exists)
+A função test() deve existir e ser chamável.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python313\Lib\unittest\mock.py", line 1423, in patched
+    with self.decoration_helper(patched,
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+                                args,
+                                ^^^^^
+                                keywargs) as (newargs, newkeywargs):
+                                ^^^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Python313\Lib\unittest\mock.py", line 1405, in decoration_helper
+    arg = exit_stack.enter_context(patching)
+  File "C:\Python313\Lib\contextlib.py", line 530, in enter_context
+    result = _enter(cm)
+  File "C:\Python313\Lib\unittest\mock.py", line 1481, in __enter__
+    self.target = self.getter()
+                  ~~~~~~~~~~~^^
+  File "C:\Python313\Lib\pkgutil.py", line 518, in resolve_name
+    mod = importlib.import_module(s)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "c:\equipe-qwen\dev_team\src\dev_team\main.py", line 29, in <module>
+    print(f"\u2705 .env carregado de: {env_path}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\equipe-qwen\dev_team\.venv\Lib\site-packages\crewai\llm.py", line 141, in write
+    return self._original_stream.write(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+======================================================================
+ERROR: test_train_function_exists (__main__.TestCrewExecution.test_train_function_exists)
+A função train() deve existir e ser chamável.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Python313\Lib\unittest\mock.py", line 1423, in patched
+    with self.decoration_helper(patched,
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+                                args,
+                                ^^^^^
+                                keywargs) as (newargs, newkeywargs):
+                                ^^^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Python313\Lib\unittest\mock.py", line 1405, in decoration_helper
+    arg = exit_stack.enter_context(patching)
+  File "C:\Python313\Lib\contextlib.py", line 530, in enter_context
+    result = _enter(cm)
+  File "C:\Python313\Lib\unittest\mock.py", line 1481, in __enter__
+    self.target = self.getter()
+                  ~~~~~~~~~~~^^
+  File "C:\Python313\Lib\pkgutil.py", line 518, in resolve_name
+    mod = importlib.import_module(s)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "c:\equipe-qwen\dev_team\src\dev_team\main.py", line 29, in <module>
+    print(f"\u2705 .env carregado de: {env_path}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\equipe-qwen\dev_team\.venv\Lib\site-packages\crewai\llm.py", line 141, in write
+    return self._original_stream.write(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+======================================================================
+ERROR: test_crewai_cli_available (__main__.TestCrewAINative.test_crewai_cli_available)
+O comando 'crewai' deve estar disponível no PATH.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\equipe-qwen\tests\test_dev_team.py", line 293, in test_crewai_cli_available
+    result = subprocess.run(
+        ['crewai', '--version'],
+    ...<2 lines>...
+        cwd=str(PROJECT_ROOT)
+    )
+  File "C:\Python313\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 1554, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado
+
+----------------------------------------------------------------------
+Ran 52 tests in 8.282s
+
+FAILED (errors=7, skipped=1)
+======================================================================
+  DevTeamCrew — Suite de Testes Completa
+======================================================================
+
+
+======================================================================
+Traceback (most recent call last):
+  File "c:\equipe-qwen\tests\test_dev_team.py", line 625, in <module>
+    print(f"  \u274c {len(result.failures)} falha(s), {len(result.errors)} erro(s)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\equipe-qwen\dev_team\.venv\Lib\site-packages\crewai\llm.py", line 141, in write
+    return self._original_stream.write(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 2: character maps to <undefined>

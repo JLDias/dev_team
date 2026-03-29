@@ -1,0 +1,45 @@
+﻿test_crewai_cli_available (tests.test_dev_team.TestCrewAINative.test_crewai_cli_available)
+O comando 'crewai' deve estar disponÃ­vel no PATH. ... ERROR
+test_crewai_native_test_command (tests.test_dev_team.TestCrewAINative.test_crewai_native_test_command)
+Executa 'crewai test -n 1 -m gemini/gemini-2.5-flash'. ... skipped 'Pulando: GEMINI_API_KEY nÃ£o configurada'
+
+======================================================================
+ERROR: test_crewai_cli_available (tests.test_dev_team.TestCrewAINative.test_crewai_cli_available)
+O comando 'crewai' deve estar disponÃ­vel no PATH.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\equipe-qwen\tests\test_dev_team.py", line 296, in test_crewai_cli_available
+    result = subprocess.run(
+        ['crewai', '--version'],
+    ...<2 lines>...
+        cwd=str(PROJECT_ROOT)
+    )
+  File "C:\Python313\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 1554, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] O sistema nÃ£o pode encontrar o arquivo especificado
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.005s
+
+FAILED (errors=1, skipped=1)
